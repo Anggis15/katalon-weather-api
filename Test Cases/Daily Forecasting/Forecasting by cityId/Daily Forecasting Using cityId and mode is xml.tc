@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Daily Forecasting Using cityId and mode is xml</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>31b338b4-5d3d-4cad-b1cd-6fc62afb8c41</testCaseGuid>
+</TestCaseEntity>

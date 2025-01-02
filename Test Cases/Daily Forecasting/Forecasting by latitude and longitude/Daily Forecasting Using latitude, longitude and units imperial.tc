@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Daily Forecasting Using latitude, longitude and units imperial</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0dfe7e3c-eece-4de6-9ae8-e6d1cfd82292</testCaseGuid>
+</TestCaseEntity>

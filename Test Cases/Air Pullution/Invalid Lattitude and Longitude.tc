@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Invalid Lattitude and Longitude</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9844831f-af01-4ec0-84a3-a25f8fd927ed</testCaseGuid>
+</TestCaseEntity>

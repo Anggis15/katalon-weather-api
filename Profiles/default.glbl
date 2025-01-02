@@ -16,12 +16,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'-6.26667'</initValue>
+      <initValue>'-6.2667'</initValue>
       <name>latitude</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'106.80833'</initValue>
+      <initValue>'106.8083'</initValue>
       <name>longitude</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

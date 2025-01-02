@@ -42,6 +42,13 @@
       <name>cityName</name>
    </variables>
    <variables>
+      <defaultValue>GlobalVariable.cnt</defaultValue>
+      <description></description>
+      <id>34fc9f5a-c22b-42cd-93d9-c60c7d57baa4</id>
+      <masked>false</masked>
+      <name>cnt</name>
+   </variables>
+   <variables>
       <defaultValue>GlobalVariable.cityId</defaultValue>
       <description></description>
       <id>5af98d2d-9b48-45ea-ae5c-9c1db9c3c66c</id>

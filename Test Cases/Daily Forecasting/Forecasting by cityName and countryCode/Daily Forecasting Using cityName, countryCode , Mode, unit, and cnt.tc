@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Daily Forecasting Using cityName, countryCode , Mode, unit, and cnt</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fab36d8a-a42f-42a4-9fad-1bed5c5f2b91</testCaseGuid>
+</TestCaseEntity>

@@ -18,7 +18,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://api.openweathermap.org/data/2.5/forecast?q=${cityName},${countryId}&amp;appid=${appId}</restUrl>
+   <restUrl>http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&amp;lon=${lon}&amp;appid=${appId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -35,18 +35,18 @@
       <name>appId</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.countryCode</defaultValue>
+      <defaultValue>GlobalVariable.latitude</defaultValue>
       <description></description>
       <id>15cc3298-915a-4047-bd64-03b44248f7d7</id>
       <masked>false</masked>
-      <name>cityName</name>
+      <name>lat</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.countryCode</defaultValue>
+      <defaultValue>GlobalVariable.longitude</defaultValue>
       <description></description>
       <id>e8db8378-e272-471b-9c94-2cf3a4716989</id>
       <masked>false</masked>
-      <name>countryId</name>
+      <name>lon</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
