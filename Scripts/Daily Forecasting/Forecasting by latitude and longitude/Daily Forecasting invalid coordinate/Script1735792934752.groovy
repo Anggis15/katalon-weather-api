@@ -17,15 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('air pollution/Historical Air Pollution'))
+response = WS.sendRequest(findTestObject('Daily Forcasting/daily forecasting by latitude and longitude/Daily Forcasting using Latitude and Longitude'))
 
-String lat = GlobalVariable.latitude
+WS.verifyResponseStatusCode(response, 400)
 
-WS.verifyElementPropertyValue(response, 'coord.lat', lat)
+String cityName = GlobalVariable.cityName
 
-String lon = GlobalVariable.longitude
+WS.verifyElementPropertyValue(response, 'city.name', cityName)
 
-WS.verifyElementPropertyValue(response, 'coord.lon', lon)
+WS.verifyElementPropertyValue(response, 'cod', 400)
 
-WS.verifyResponseStatusCode(response, 200)
+WS.verifyElementPropertyValue(response, 'message', 'wrong latitude')
 

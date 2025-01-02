@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Daily Forcasting using cityName and countryCode</name>
+   <name>Daily Forcasting using invalid coordinate</name>
    <tag></tag>
-   <elementGuidId>d6a5c948-b952-40fe-a234-c27dbc0cf73b</elementGuidId>
+   <elementGuidId>0636fcc9-320d-4a5f-a727-515e213abeac</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -18,7 +18,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://api.openweathermap.org/data/2.5/forecast?q=${cityName},${countryId}&amp;appid=${appId}</restUrl>
+   <restUrl>https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&amp;lon=${longitude}&amp;appid=${appId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -35,18 +35,18 @@
       <name>appId</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.cityName</defaultValue>
+      <defaultValue>GlobalVariable.cityId</defaultValue>
       <description></description>
-      <id>833548a3-6dd1-4c88-a14f-47a44a44f538</id>
+      <id>ad07b75c-e24d-447c-850f-4932a6bf15cb</id>
       <masked>false</masked>
-      <name>cityName</name>
+      <name>latitude</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.countryCode</defaultValue>
+      <defaultValue>GlobalVariable.longitude</defaultValue>
       <description></description>
-      <id>e8db8378-e272-471b-9c94-2cf3a4716989</id>
+      <id>ff6b2d26-3758-472a-ab60-2dfae50ccb7a</id>
       <masked>false</masked>
-      <name>countryId</name>
+      <name>longitude</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

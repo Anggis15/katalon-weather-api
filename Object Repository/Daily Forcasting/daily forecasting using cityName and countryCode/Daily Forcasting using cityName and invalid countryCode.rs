@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Daily Forcasting using cityName and countryCode</name>
+   <name>Daily Forcasting using cityName and invalid countryCode</name>
    <tag></tag>
-   <elementGuidId>d6a5c948-b952-40fe-a234-c27dbc0cf73b</elementGuidId>
+   <elementGuidId>51ac0391-860e-4186-851b-a24e89964fe8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>

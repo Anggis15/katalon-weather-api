@@ -17,3 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WS.sendRequest(findTestObject('air pollution/Invalid Latitude and longitude Air Pollution'))
+
+WS.verifyElementPropertyValue(response, 'cod', 400)
+
+WS.verifyElementPropertyValue(response, 'message', 'wrong latitude')
+
+WS.verifyResponseStatusCode(response, 400)
+

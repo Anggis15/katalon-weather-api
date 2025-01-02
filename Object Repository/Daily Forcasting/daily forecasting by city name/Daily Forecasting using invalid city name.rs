@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Daily Forcasting using cityName and countryCode</name>
+   <name>Daily Forecasting using invalid city name</name>
    <tag></tag>
-   <elementGuidId>d6a5c948-b952-40fe-a234-c27dbc0cf73b</elementGuidId>
+   <elementGuidId>ae71ac2f-7012-4d0d-8ddc-ff4177eb5f83</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -18,7 +18,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://api.openweathermap.org/data/2.5/forecast?q=${cityName},${countryId}&amp;appid=${appId}</restUrl>
+   <restUrl>https://api.openweathermap.org/data/2.5/forecast?q=jayakarta&amp;appid=${appId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -41,13 +41,6 @@
       <masked>false</masked>
       <name>cityName</name>
    </variables>
-   <variables>
-      <defaultValue>GlobalVariable.countryCode</defaultValue>
-      <description></description>
-      <id>e8db8378-e272-471b-9c94-2cf3a4716989</id>
-      <masked>false</masked>
-      <name>countryId</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -60,6 +53,16 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+
+
+
+WS.verifyElementPropertyValue(response, 'cod', '200')
+WS.verifyElementPropertyValue(response, 'message', '0')
+
+String cityName = GlobalVariable.cityName
+
+WS.verifyElementPropertyValue(response, 'city.name', cityName)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -17,3 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+response = WS.sendRequest(findTestObject('air pollution/Current Air Pollution'))
+
+String lat = GlobalVariable.latitude
+
+WS.verifyElementPropertyValue(response, 'coord.lat', lat)
+
+String lon = GlobalVariable.longitude
+
+WS.verifyElementPropertyValue(response, 'coord.lon', lon)
+
+WS.verifyResponseStatusCode(response, 200)
+
