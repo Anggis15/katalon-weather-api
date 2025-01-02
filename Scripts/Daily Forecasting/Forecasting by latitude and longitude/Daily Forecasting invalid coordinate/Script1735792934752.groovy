@@ -17,13 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Daily Forcasting/daily forecasting by latitude and longitude/Daily Forcasting using Latitude and Longitude'))
+response = WS.sendRequest(findTestObject('Daily Forcasting/daily forecasting by latitude and longitude/Daily Forcasting using invalid coordinate'))
 
 WS.verifyResponseStatusCode(response, 400)
-
-String cityName = GlobalVariable.cityName
-
-WS.verifyElementPropertyValue(response, 'city.name', cityName)
 
 WS.verifyElementPropertyValue(response, 'cod', 400)
 

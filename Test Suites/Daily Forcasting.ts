@@ -291,4 +291,25 @@
       <testCaseId>Test Cases/Daily Forecasting/Forecasting by latitude and longitude/Daily Forecasting Using latitude, longitude and Lang</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>1f713840-721f-431f-8dbd-3686f6135709</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Daily Forecasting/Forecasting by cityId/Daily Forecasting Using invalid cityId</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>13a13614-7742-4994-8754-662e35f9d42b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Daily Forecasting/Forecasting by latitude and longitude/Daily Forecasting invalid coordinate</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fd9d0cde-8f36-44ab-b093-e4ecc86e5c89</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Daily Forecasting/Forecasting by Using City Name/Daily Forecasting Using invalid City Name</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
