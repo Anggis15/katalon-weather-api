@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Daily Forcasting Using City Name and unit is metric</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3a82ad2b-0a8d-4783-b0b1-256d46a2643a</testCaseGuid>
+</TestCaseEntity>

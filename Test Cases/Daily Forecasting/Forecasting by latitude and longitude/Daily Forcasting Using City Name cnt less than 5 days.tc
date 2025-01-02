@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Daily Forcasting Using City Name cnt less than 5 days</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>47b724cc-d94a-466e-a7fe-c7dc0c0f391f</testCaseGuid>
+</TestCaseEntity>
